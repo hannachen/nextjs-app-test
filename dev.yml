@@ -1,0 +1,21 @@
+name: nextjs-app-test
+
+type: node
+
+up:
+  - railgun
+  - node:
+      version: v10.14.1
+      yarn: true
+      packages:
+        - .
+
+commands:
+  # console:
+  start: yarn start
+  server: yarn dev
+  build: yarn build
+  test: yarn test
+
+open:
+  app: https://nextjs-app-test.myshopify.io
